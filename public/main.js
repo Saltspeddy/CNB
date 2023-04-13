@@ -56,26 +56,34 @@ let a = true;
 function dropExamene(){
     if(a === true){
         document.querySelector("#examene").style.display = "flex";
-        a = !a;
         document.querySelector("#arrow1").style.transform = "rotate(180deg)"
     }
     else{
         document.querySelector("#examene").style.display = "none";
         document.querySelector("#arrow1").style.transform = "rotate(0deg)"
-        a = !a; 
     }
+    a = !a;
 }
 
 function dropOfertaEducationala(){
     if(a === true){
         document.querySelector("#ofertaEducationala").style.display = "flex";
-        a = !a;
         document.querySelector("#arrow2").style.transform = "rotate(180deg)"
     }
     else{
         document.querySelector("#ofertaEducationala").style.display = "none";
-        document.querySelector("#arrow2").style.transform = "rotate(0deg)"
-        a = !a; 
+        document.querySelector("#arrow2").style.transform = "rotate(0deg)" 
+    }
+    a = !a;
+}
+let opened = true;
+function secondaryMenu(){
+    if(opened === true){
+        document.querySelector("#secondaryMenu").style.transform = "translateX(0px)";
+        opened = !opened;
+    }
+    else{
+        document.querySelector("#secondaryMenu").style.transform = "translateX(250px)";
+        opened = !opened;
     }
 }
-
