@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="overflow-x: hidden;">
+<html lang="en" style="overflow-x: hidden; scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="styles.css">
     <title>Informații</title>
 </head>
-<body class="font-roboto bg-[#F4F4F9]" style="overflow-x: hidden;">
+<body class="h-[100vh] font-roboto bg-[#F4F4F9]" style="overflow-x: hidden;">
     <nav class="h-16 min-w-[100vw] bg-[#762424] flex justify-between items-center gap-4 relative">
         <img class="h-14 ml-16 absolute" src="./assets/CNB_sgV2-removebg-preview.png" alt="CNB logo">               
         <div class="h-16 w-[100vw] hidden lg:flex flex-row self-center items-center justify-center text-lg gap-20 relative">
                 <a class="text-white px-6 h-[100%] flex items-center border-b-2 border-transparent hover:border-white duration-500" href="./index.html">Acasă</a>
                 <a class="text-white px-6 h-[100%] flex items-center border-b-2 border-transparent hover:border-white duration-500" href="./catedre.html">Catedre</a>
-                <a class="text-white px-6 h-[100%] flex items-center border-b-2 border-transparent hover:border-white duration-500" href="./informatii.html">Informații</a>
+                <a onmouseover="dropDown()" onmouseleave="dropFade()" class="text-white px-6 h-[100%] flex items-center border-b-2 border-transparent hover:border-white duration-500" href="./informatii.html">Informații</a>
                 <a class="text-white px-6 h-[100%] flex items-center border-b-2 border-transparent hover:border-white duration-500" href="./contact.html">Contact</a>
+            </div>
+            <div onmouseover="dropDown()" onmouseleave="dropFade()" id="dropDown" class="rounded-b-md opacity-0 hidden absolute w-[200px]  bg-[#762424] p-4 left-[calc(50vw-10px)] top-16 duration-500">
+                <div class="text-white flex flex-col gap-2">
+                    <a href="">Anunțuri</a>
+                    <a href="">Concursuri și olimpiade</a>
+                    <a href="">Examene</a>
+                    <a href="">Consiliul elevilor</a>
+                    <a href="">Burse școlare</a>
+                    <a href="">Ofertă educațională</a>
+                </div>
             </div>
         <div class=" flex lg:hidden ml-[calc(100vw-5rem)] mr-7 fixed">
             <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-8 h-8">
@@ -23,17 +33,63 @@
         </div>
     </nav>
     
-    <div class="w-[100vw] flex justify-center items-center mt-16">
-        <div class="w-[70vw] grid grid-cols-2 grid-rows-3 justify-center gap-6">
-                <div class="w-[100%] h-16 text-3xl p-3 border-4 border-gray-300 rounded-2xl flex justify-center items-center hover:border-gray-800 duration-500">Anunțuri</div>
-                <div class="w-[100%] h-16 text-3xl p-3 border-4 border-gray-300 rounded-2xl flex justify-center items-center hover:border-gray-800 duration-500">Consiliul elevilor</div>
-                <div class="w-[100%] h-16 text-3xl p-3 border-4 border-gray-300 rounded-2xl flex justify-center items-center hover:border-gray-800 duration-500">Concursuri și olimpiade</div>
-                <div class="w-[100%] h-16 text-3xl p-3 border-4 border-gray-300 rounded-2xl flex justify-center items-center hover:border-gray-800 duration-500">Burse școlare</div>
-                <div class="w-[100%] h-16 text-3xl p-3 border-4 border-gray-300 rounded-2xl flex justify-center items-center hover:border-gray-800 duration-500">Examene</div>
-                <div class="w-[100%] h-16 text-3xl p-3 border-4 border-gray-300 rounded-2xl flex justify-center items-center hover:border-gray-800 duration-500">Ofertă educațională</div>
+    <div class="min-h-[90vh] w-screen flex justify-center items-center mt-2 pb-9">
+        <div class="w-[70vw] flex flex-col md:gap-10 gap-5">
+            <div class="w-[100%] h-16 text-gray-300 lg:text-6xl md:text-4xl p-3 border-b-4 border-gray-300 rounded-lg flex justify-between items-center hover:text-gray-800 hover:border-gray-800 duration-500">
+                <p>Anunțuri</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-14 md:h-14 w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+            <div class="w-[100%] h-16 text-gray-300 lg:text-6xl md:text-4xl p-3 border-b-4 border-gray-300 rounded-lg flex justify-between items-center hover:text-gray-800 hover:border-gray-800 duration-500">
+                <p>Consiliul elevilor</p> 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-14 md:h-14 w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+            <div class="w-[100%] h-16 text-gray-300 lg:text-6xl md:text-4xl p-3 border-b-4 border-gray-300 rounded-lg flex justify-between items-center hover:text-gray-800 hover:border-gray-800 duration-500">
+                <p>Concursuri și olimpiade</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-14 md:h-14 w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+            <div class="w-[100%] h-16 text-gray-300 lg:text-6xl md:text-4xl p-3 border-b-4 border-gray-300 rounded-lg flex justify-between items-center hover:text-gray-800 hover:border-gray-800 duration-500">
+                <p>Burse școlare</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-14 md:h-14 w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+            <div onclick="dropExamene()" class="w-[100%] h-16 text-gray-300 lg:text-6xl md:text-4xl p-3 border-b-4 border-gray-300 rounded-lg flex justify-between items-center hover:text-gray-800 hover:border-gray-800 duration-500">
+                <p>Examene</p>
+                <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-14 md:h-14 w-7 h-7 duration-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+            </div>
+            <div id="examene" class="hidden">
+                <div class="ml-6 text-lg flex flex-col text-gray-300">
+                    <div class="hover:text-gray-800 duration-500">Admitere</div>
+                    <div class="hover:text-gray-800 duration-500">Evaluarea Națională</div>
+                    <div class="hover:text-gray-800 duration-500">Bacalaureat</div>
+                    <div class="hover:text-gray-800 duration-500">Simulare examene</div>
+                    <div class="hover:text-gray-800 duration-500">ECDL</div>
+                    <div class="hover:text-gray-800 duration-500">Public Speaking</div>
+                </div>
+            </div>
+            <div onclick="dropOfertaEducationala()" class="w-[100%] h-16 text-gray-300 lg:text-6xl md:text-4xl p-3 border-b-4 border-gray-300 rounded-lg flex justify-between items-center hover:text-gray-800 hover:border-gray-800 duration-500">
+                <p>Ofertă educațională</p>
+                <svg id="arrow2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-14 md:h-14 w-7 h-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+            </div>
+            <div id="ofertaEducationala" class="hidden">
+                <div class="ml-6 text-lg flex flex-col text-gray-300">
+                    <div class="hover:text-gray-800 duration-500">Primară</div>
+                    <div class="hover:text-gray-800 duration-500">Gimnaziu</div>
+                    <div class="hover:text-gray-800 duration-500">Liceu</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
-
 <script src="./main.js"></script>
 </html>

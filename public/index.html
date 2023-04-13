@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" style="overflow-x: hidden;">
+<head >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +8,22 @@
     <title>Colegiul Național Bănățean</title>
 </head>
 <body style="overflow-x: hidden;" class="font-roboto">
-    <main>
+    <main class="min-h-[130vh]">
         <div class="h-[100vh] w-[100vw] bg-center bg-cover bg-fixed bg-no-repeat" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://upload.wikimedia.org/wikipedia/commons/4/43/Colegiul_National_Banatean_2017.jpg');">
             <nav class="h-16 w-[100vw] bg-transparent flex justify-between items-center gap-4 ">
-               <img class="h-14 ml-16 fixed" src="./assets/CNB_sgV2-removebg-preview.png" alt="CNB logo">
-                    <div class="h-16 w-[100vw] hidden lg:flex flex-row self-center items-center justify-center text-lg gap-20 fixed">
-                        <a class="text-white px-6 h-[100%] flex items-center border-b-2 border-transparent hover:border-white duration-500" href="./index.html">Acasă</a>
-                        <a class="text-white px-6 h-[100%] flex items-center border-b-2 border-transparent hover:border-white duration-500" href="./catedre.html">Catedre</a>
-                        <a class="text-white px-6 h-[100%] flex items-center border-b-2 border-transparent hover:border-white duration-500" href="./informatii.html">Informații</a>
-                        <a class="text-white px-6 h-[100%] flex items-center border-b-2 border-transparent hover:border-white duration-500" href="./contact.html">Contact</a>
-                    </div>
-                <div class="flex lg:hidden ml-[calc(100vw-5rem)] mr-7 fixed">
-                    <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-8 h-8">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </div>
-            </nav>
+                <img class="h-14 ml-16 fixed" src="./assets/CNB_sgV2-removebg-preview.png" alt="CNB logo">
+                     <div class="h-16 w-[100vw] hidden lg:flex flex-row self-center items-center justify-center text-lg gap-20 fixed">
+                         <a class="text-white px-6 h-[100%] flex items-center border-b-2 border-transparent hover:border-white duration-500" href="./index.html">Acasă</a>
+                         <a class="text-white px-6 h-[100%] flex items-center border-b-2 border-transparent hover:border-white duration-500" href="./catedre.html">Catedre</a>
+                         <a class="text-white px-6 h-[100%] flex items-center border-b-2 border-transparent hover:border-white duration-500" href="./informatii.html">Informații</a>
+                         <a class="text-white px-6 h-[100%] flex items-center border-b-2 border-transparent hover:border-white duration-500" href="./contact.html">Contact</a>
+                     </div>
+                 <div class="flex lg:hidden ml-[calc(100vw-5rem)] mr-7 fixed">
+                     <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-8 h-8">
+                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                     </svg>
+                 </div>
+             </nav>
             <div class="h-[80vh] w-[100vw] grid grid-cols-5">
                 <div class=" justify-end hidden md:flex col-span-2">
                     <img class="w-[45%] self-center"  src="./assets/CNB_sgV2-removebg-preview.png" alt="">
@@ -43,62 +43,81 @@
                 </div>
             </div>
         </div>
-        <div class="relative min-h-[100vh] w-[100vw] bg-slate-600 flex flex-col items-center">
-            <div class="w-full pt-28 flex justify-center items-center text-white text-3xl">Noutăți</div>
-            <div class="w-[80vw] h-[80vh] overflow-x-scroll text-xl flex items-center">
-                <div id="main" class="w-[100vw]">
-                    <div id="slide" class="h-[55vh] md:w-[350vw] w-[700vw] flex justify-center duration-300 ease-in-out translate-x-[-300]" style="overflow:hidden">
-                        <div class="md:w-[350vw] w-[700vw] grid grid-cols-7 md:translate-x-[-25vw] translate-x-[-100vw]">
-                            <div class="w-[50vw] h-full grid grid-rows-2 justify-items-center opacity-60">
-                                <div class="md:h-[50vh] h-[30vh] md:w-[50vw] w-[100vw] md:mb-2 bg-center bg-cover" style="background-image: url(./assets/scan0010.jpg);">
-            
-                                </div>
-                                <p>Elevul x a luat nush ce premiu la olimpiada de y assdasdasdasdkbaskjdhdasd</p>
+        <div class="relative h-[100vh] w-[100vw] bg-slate-600 flex flex-col justify-center items-center">
+                <div id="main" class="h-[100vh]">
+                    <div id="slide" class="h-[100vh] flex justify-center duration-300 ease-in-out">
+                        <div class="w-[700vw] grid grid-cols-7 translate-x-[200vw]">
+                            <div id="c0" class="w-full h-full opacity-60">
+                                <div class="w-full h-full bg-center bg-cover" style="background-image: url(./assets/scan0003.jpg);">
+                                    <div class=" p-7 rounded-3xl w-[70vw] bg-white translate-x-[15vw] translate-y-[70vh]"><b>13 martie 2023:</b></div>
+                                </div>                    
                             </div>
-                            <div id="c1" class="w-[50vw] h-full grid grid-rows-2 justify-items-center">
-                                <div class="md:h-[50vh] h-[30vh] md:w-[50vw] w-[100vw] md:mb-2 bg-center bg-cover" style="background-image: url(./assets/scan0003.jpg);">
-            
-                                </div>
-                                <p>Elevul x a luat nush ce premiu la olimpiada de ysadasdhbasiudb asdipjbasduibaisdbasiodboiabdsaokdhbasiod ashsbdoaspakdb</p>
+                            <div id="c1" class="w-full h-full opacity-60">
+                                <div class="w-full h-full bg-center bg-cover" style="background-image: url(./assets/scan0003.jpg);">
+                                    <div class=" p-7 rounded-3xl w-[70vw] bg-white translate-x-[15vw] translate-y-[70vh]"><b>13 martie 2023:</b></div>
+                                </div>                    
                             </div>
-                            <div id="c2" class="w-[50vw] h-full grid grid-rows-2 justify-items-center opacity-60">
-                                <div class="md:h-[50vh] h-[30vh] md:w-[50vw] w-[100vw] md:mb-2 bg-center bg-cover" style="background-image: url(./assets/scan0004.jpg);">
-            
-                                </div>                    <p>albina</p>
+                            <div id="c2" class="w-full h-full opacity-60">
+                                <div class="w-full h-full bg-center bg-cover" style="background-image: url(./assets/scan0004.jpg);">
+                                    <div class=" p-7 rounded-3xl w-[70vw] bg-white translate-x-[15vw] translate-y-[70vh]"><b>13 martie 2023:</b></div>
+                                </div>                    
                             </div>
-                            <div id="c3" class="w-[50vw] h-full grid grid-rows-2 justify-items-center opacity-60">
-                                <div class="md:h-[50vh] h-[30vh] md:w-[50vw] w-[100vw] md:mb-2 bg-center bg-cover" style="background-image: url(./assets/scan0005.jpg);">
-            
-                                </div>                    <p>albina</p>
+                            <div id="c3" class="w-full h-full opacity-60">
+                                <div class="w-full h-full bg-center bg-cover" style="background-image: url(./assets/scan0006.jpg);">
+                                    <div class=" p-7 rounded-3xl w-[70vw] bg-white translate-x-[15vw] translate-y-[70vh]"><b>13 martie 2023:</b></div>
+                                </div>                    
                             </div>
-                            <div id="c4" class="w-[50vw] h-full grid grid-rows-2 justify-items-center opacity-60">
-                                <div class="md:h-[50vh] h-[30vh] md:w-[50vw] w-[100vw] md:mb-2 bg-center bg-cover" style="background-image: url(./assets/scan0018.jpg);">
-            
-                                </div>                    <p>albina</p>
+                            <div id="c4" class="w-full h-full opacity-60">
+                                <div class="w-full h-full bg-center bg-cover" style="background-image: url(./assets/scan0007.jpg);">
+                                    <div class=" p-7 rounded-3xl w-[70vw] bg-white translate-x-[15vw] translate-y-[70vh]"><b>13 martie 2023:</b></div>
+                                </div>                    
                             </div>
-                            <div id="c5" class="w-[50vw] h-full grid grid-rows-2 justify-items-center opacity-60">
-                                <div class="md:h-[50vh] h-[30vh] md:w-[50vw] w-[100vw] md:mb-2 bg-center bg-cover" style="background-image: url(./assets/scan0010.jpg);">
-            
-                                </div>                    <p>albina</p>
+                            <div id="c5" class="w-full h-full opacity-60">
+                                <div class="w-full h-full bg-center bg-cover" style="background-image: url(./assets/scan0008.jpg);">
+                                    <div class=" p-7 rounded-3xl w-[70vw] bg-white translate-x-[15vw] translate-y-[70vh]"><b>13 martie 2023:</b></div>
+                                </div>                    
                             </div>
-                            <div class="w-[50vw] h-full grid grid-rows-2 justify-items-center opacity-60">
-                                <div class="md:h-[50vh] h-[30vh] md:w-[50vw] w-[100vw] md:mb-2 bg-center bg-cover" style="background-image: url(./assets/scan0003.jpg);">
-            
-                                </div>
-                                <p>Elevul x a luat nush ce premiu la olimpiada de y</p>
+                            <div id="c6" class="w-full h-full opacity-60">
+                                <div class="w-full h-full bg-center bg-cover" style="background-image: url(./assets/scan0004.jpg);">
+                                    <div class=" p-7 rounded-3xl w-[70vw] bg-white translate-x-[15vw] translate-y-[70vh]"><b>13 martie 2023:</b></div>
+                                </div>                    
                             </div>
+                            
                         </div> 
                     </div>
-                    <button id="btn-left" class="absolute md:top-[32vh] top-[130vh] left-5 rounded-full p-2" style="transition-duration: 500ms;" onclick="leftSlide()">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                        </svg>              
-                    </button>
-                    <button id="btn-right" class="absolute md:top-[32vh] top-[130vh] right-5 rounded-full p-2" style="transition-duration: 500ms;" onclick="rightSlide()">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>              
-                    </button>
+                    <div onclick="leftSlide()" class="absolute h-[100vh] top-[0vh] w-44 left-0 bg-[#762424] bg-opacity-0 hover:bg-opacity-80 duration-500">
+                        <button id="btn-left" class="absolute left-5 top-[50vh] rounded-full p-2 opacity-100" style="transition-duration: 500ms;">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-28 md:h-24 w-12 h-10">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                            </svg>              
+                        </button>
+                    </div>
+                    <div onclick="rightSlide()" class="absolute h-[100vh] top-[0vh] w-44 right-0 bg-[#762424] bg-opacity-0 hover:bg-opacity-80 duration-500">
+                        <button id="btn-right" class="absolute right-5 top-[50vh] rounded-full p-2" style="transition-duration: 500ms;">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:w-28 md:h-24 w-12 h-10">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>              
+                        </button>
+                    </div>
+                    <div class="absolute h-10 w-[20vw] bg-transparent bottom-1 left-[40vw]">
+                        <div class="relative flex justify-center items-center gap-3">
+                            <svg id="i1" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-80">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <svg id="i2" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-50">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <svg id="i3" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-50">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <svg id="i4" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-50">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <svg id="i5" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-50">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>                                
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -111,6 +130,6 @@
     <!-- FLOREA IRINA-IOANA -->
     <!-- DAVID DARIA-CRISTINA -->
 </body>
+<script src="./main.js"></script>
 </html>
 
-<style></style>

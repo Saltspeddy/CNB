@@ -4,58 +4,78 @@ let btnLeft = document.querySelector("#btn-left");
 let k = 1;
 
 function leftSlide(){
-    let width = screen.width;
     if(k != 1){
-        if(width > 767){
-            slide.style.transform = "translateX("+ (k-2)*-50 +"vw)";
-        }
-        else{
-            slide.style.transform = "translateX("+ (k-2)*-100 +"vw)"; 
-        }
+        slide.style.transform = "translateX("+ (k-2)*-100 +"vw)"; 
         k--;
         for(let i = 1 ; i <= 5 ; i++){
             if( k === i ){
-                document.querySelector("#c"+i).style.opacity = "1";
+                document.querySelector("#i"+i).style.opacity = "0.8";
             }
             else{
-                document.querySelector("#c"+i).style.opacity = "0.6";
+                document.querySelector("#i"+i).style.opacity = "0.5";
             }
         }
     }
     else{
-        btnLeft.style.transitionDuration = "0s";
-        if(width > 767){
-            slide.style.transform = "translateX(-200vw)";
-        }
-        else slide.style.transform = "translateX(-400vw)";
+        slide.style.transform = "translateX(-400vw)";
         k = 5;
-        document.querySelector("#c5").style.opacity = "1";
+        document.querySelector("#i5").style.opacity = "0.8";
+        document.querySelector("#i1").style.opacity = "0.5";
     }
 }
 function rightSlide(){
-    let width = screen.width;
     if(k != 5){
-        if(width > 767){
-            slide.style.transform = "translateX("+ k*-50 +"vw)";
-        }
-        else{
-            slide.style.transform = "translateX("+ k*-100 +"vw)";
-        }
+        slide.style.transform = "translateX("+ k*-100 +"vw)";
         k++;
         for(let i = 1 ; i <= 5 ; i++){
             if( k === i ){
-                document.querySelector("#c"+i).style.opacity = "1";
+                document.querySelector("#i"+i).style.opacity = "0.8";
             }
             else{
-                document.querySelector("#c"+i).style.opacity = "0.6";
+                document.querySelector("#i"+i).style.opacity = "0.5";
             }
         }
     }
     else{
-        console.log(btnRight)
-        btnRight.style.transitionDuration = "0s";
         slide.style.transform = "translateX(0vw)";
         k = 1;
-        document.querySelector("#c1").style.opacity = "1";
+        document.querySelector("#i1").style.opacity = "0.8";
+        document.querySelector("#i5").style.opacity = "0.5";
     }
 }
+
+function dropDown(){
+    document.querySelector("#dropDown").style.display = "block";
+    document.querySelector("#dropDown").style.opacity = "1";
+}
+function dropFade(){
+    document.querySelector("#dropDown").style.display = "none";
+    document.querySelector("#dropDown").style.opacity = "0";
+}
+let a = true;
+function dropExamene(){
+    if(a === true){
+        document.querySelector("#examene").style.display = "flex";
+        a = !a;
+        document.querySelector("#arrow1").style.transform = "rotate(180deg)"
+    }
+    else{
+        document.querySelector("#examene").style.display = "none";
+        document.querySelector("#arrow1").style.transform = "rotate(0deg)"
+        a = !a; 
+    }
+}
+
+function dropOfertaEducationala(){
+    if(a === true){
+        document.querySelector("#ofertaEducationala").style.display = "flex";
+        a = !a;
+        document.querySelector("#arrow2").style.transform = "rotate(180deg)"
+    }
+    else{
+        document.querySelector("#ofertaEducationala").style.display = "none";
+        document.querySelector("#arrow2").style.transform = "rotate(0deg)"
+        a = !a; 
+    }
+}
+
