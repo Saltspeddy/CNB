@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Colegiul Național Bănățean</title>
 </head>
-<body style="overflow-x: hidden;" class="font-roboto">
+<body onscroll="test()" style="overflow-x: hidden;" class="font-roboto">
     <main>
         <div>
             <div class="h-[100vh] w-[100vw] bg-center bg-cover bg-fixed bg-no-repeat" style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://upload.wikimedia.org/wikipedia/commons/4/43/Colegiul_National_Banatean_2017.jpg');">
-                <nav class="z-50 h-16 w-[100vw] bg-transparent flex justify-between items-center gap-4 fixed">
+                <nav id="nav" class="z-50 h-16 w-[100vw] bg-[#762424] bg-opacity-0 flex justify-between items-center gap-4 fixed duration-500">
                     <img class="z-40 h-14 md:ml-16 ml-10 fixed" src="./assets/CNB_sgV2-removebg-preview.png" alt="CNB logo">
                          <div class="h-16 w-[100vw] hidden lg:flex flex-row self-center items-center justify-center text-lg gap-20 fixed">
                              <a class="text-white px-6 h-[100%] flex items-center border-b-2 border-transparent hover:border-white duration-500" href="./index.html">Acasă</a>
@@ -61,7 +61,7 @@
             </div>
             <div class=" relative h-[100vh] w-[100vw] bg-slate-600 flex flex-col justify-center items-center">
                     <div id="main" class="h-[100vh]">
-                        <div id="slide" class="h-[100vh] flex justify-center duration-300 ease-in-out">
+                        <div id="slide" class="h-[100vh] flex justify-center duration-1000 ease-in-out">
                             <div class="w-[700vw] grid grid-cols-7 translate-x-[200vw]">
                                 <div id="c0" class="w-full h-full opacity-60">
                                     <div class="w-full h-full  bg-center bg-cover">
@@ -75,7 +75,7 @@
                                     <div class="w-full h-full bg-center bg-cover">
                                         <div class="w-[100vw] h-[100vh] flex flex-col justify-center items-center gap-3">
                                             <div class="h-[75vh] w-[70vw] bg-center bg-cover rounded-3xl" style="background-image: url(./assets/scan0003.jpg);"></div>
-                                            <div class="p-7 rounded-3xl w-[70vw] bg-white"><b>13 martie 2023:</b></div>
+                                            <div class="p-7 rounded-3xl w-[70vw] bg-white"><b>13 martie 2023:</b>mor</div>
                                         </div>
                                     </div>                    
                                 </div>
@@ -137,19 +137,19 @@
                         </div>
                         <div class="absolute h-10 w-[20vw] bg-transparent -bottom-3 left-[40vw]">
                             <div class="relative flex justify-center items-center gap-3">
-                                <svg id="i1" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-80">
+                                <svg id="i1" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-80 duration-500">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                <svg id="i2" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-50">
+                                <svg id="i2" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-50 duration-500">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                <svg id="i3" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-50">
+                                <svg id="i3" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-50 duration-500">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                <svg id="i4" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-50">
+                                <svg id="i4" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-50 duration-500">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                <svg id="i5" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-50">
+                                <svg id="i5" xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 opacity-50 duration-500">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>                                
                             </div>

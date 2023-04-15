@@ -52,30 +52,7 @@ function dropFade(){
     document.querySelector("#dropDown").style.display = "none";
     document.querySelector("#dropDown").style.opacity = "0";
 }
-let a = true;
-function dropExamene(){
-    if(a === true){
-        document.querySelector("#examene").style.display = "flex";
-        document.querySelector("#arrow1").style.transform = "rotate(180deg)"
-    }
-    else{
-        document.querySelector("#examene").style.display = "none";
-        document.querySelector("#arrow1").style.transform = "rotate(0deg)"
-    }
-    a = !a;
-}
 
-function dropOfertaEducationala(){
-    if(a === true){
-        document.querySelector("#ofertaEducationala").style.display = "flex";
-        document.querySelector("#arrow2").style.transform = "rotate(180deg)"
-    }
-    else{
-        document.querySelector("#ofertaEducationala").style.display = "none";
-        document.querySelector("#arrow2").style.transform = "rotate(0deg)" 
-    }
-    a = !a;
-}
 let opened = true;
 function secondaryMenu(){
     if(opened === true){
@@ -86,4 +63,30 @@ function secondaryMenu(){
         document.querySelector("#secondaryMenu").style.transform = "translateX(250px)";
         opened = !opened;
     }
+}
+let boolInformatii = [];
+for (let index = 1; index <= 2; index++) {
+    boolInformatii[index] = true;
+}
+function dropInformatii(value){
+    if(boolInformatii[value] === true){
+        document.querySelector("#info"+value).style.display = "flex";
+        document.querySelector("#arrow"+value).style.transform = "rotate(180deg)"
+    }
+    else{
+        document.querySelector("#info"+value).style.display = "none";
+        document.querySelector("#arrow"+value).style.transform = "rotate(0deg)"
+    }
+    boolInformatii[value] = !boolInformatii[value]; 
+}
+
+function test(){
+    let top = window.pageYOffset;
+    if( top === 0 ){
+        document.querySelector("#nav").style.backgroundColor = "rgb(118 36 36 / 0)"
+    }
+    else{
+        document.querySelector("#nav").style.backgroundColor = "rgb(118 36 36 / 0.9)"
+    }
+
 }
