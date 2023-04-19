@@ -88,5 +88,4 @@ function test(){
     else{
         document.querySelector("#nav").style.backgroundColor = "rgb(118 36 36 / 0.9)"
     }
-
 }
