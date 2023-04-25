@@ -1,2 +1,2 @@
 # CNB
-https://6447f136d7d52b0075db388b--cnb-prot.netlify.app/
+https://64482dd2b8353516f1244fd9--cnb-prot.netlify.app/index.html
